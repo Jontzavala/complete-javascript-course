@@ -15,7 +15,7 @@ let myFirstJob = "Programmer";
 let myCurrentJob = "Teacher";
 
 console.log(myFirstJob);
-*/
+
 
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
@@ -39,3 +39,12 @@ console.log(year);
 console.log(typeof year);
 
 console.log(typeof null);
+
+let age = 30;
+age = 31;
+
+const birthYear = 1991; // by default use const over let.
+// birthYear = 1990; can't change the value of a const.
+
+// const job; // need an initial value to use const.
+*/

@@ -3,9 +3,9 @@
 
 // Log their values to the console.
 
-let country = "USA";
-let continent = "North America";
-let population = 100;
+const country = "USA";
+const continent = "North America";
+const population = 100;
 
 console.log(country + " is on the continent " + continent + " with a population of " + population);
 
@@ -15,7 +15,8 @@ console.log(country + " is on the continent " + continent + " with a population 
 
 // Log the types of isIsland, population, country and language to the console.
 
-let isIsland = false;
+const isIsland = false;
 let language;
+language = "English"
 
 console.log(typeof isIsland, typeof population, typeof country, typeof language);
