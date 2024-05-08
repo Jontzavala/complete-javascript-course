@@ -138,4 +138,75 @@ if (height) {
 } else {
     console.log("Height is not defined");
 }
+
+const age = '18';
+
+if (age === 18) console.log("You're an adult"); // strict equality operator
+
+if (age == 18) console.log("You're an adult"); // loose equality operator
+
+const favorite = prompt("What's your favorite number?");
+console.log(typeof favorite);
+
+if (favorite == 23) { // "23" == 23 type coercion is happening with the loose equality operator
+    console.log("nice");
+} else {
+    console.log("It's a string not a number")
+}
+
+if (favorite === 23) { // "23" == 23 Strict equality operator so it will return false.
+    console.log("nice");
+} else {
+    console.log("It's a string not a number")
+}
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log("Sarah can drive");
+// } else {
+//     console.log("Someone else should drive");
+// }
+
+const isTired = false;
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah can drive");
+} else {
+    console.log("Someone else should drive");
+}
+
+const day = "tuesday";
+
+switch (day) {
+    case "monday":
+        console.log("Plan course");
+        console.log("Go to coding meetup");
+        break;
+    case "tuesday":
+        console.log("Prepare theory videos");
+        break;
+    case "wednesday":
+    case "thursday":
+        console.log("Write code examples");
+        break;
+    case "friday":
+        console.log("Record videos");
+    case "saturday":
+    case "sunday":
+        console.log("Enjoy weekend");
+        break;
+    default:
+        console.log("Not a valid day");
+}
+
+const age = 23;
+
+age >= 18 ? console.log("True") : console.log("False");
 */
