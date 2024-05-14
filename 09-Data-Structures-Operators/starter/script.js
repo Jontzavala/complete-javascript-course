@@ -26,4 +26,51 @@ const restaurant = {
       close: 24,
     },
   },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 };
+
+const arr = [2, 3, 4];
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
+
+// Destructuring Array
+const [x, y, z] = arr;
+console.log(x, y, z);
+console.log(arr);
+
+// skip the second element with the empty space
+const [first, , second] = restaurant.categories;
+console.log(first, second);
+
+//switching the first and third element
+let [main, , secondary] = restaurant.categories;
+console.log(main, secondary);
+
+// switch without destructuring
+// const temp = main;
+// main = secondary;
+// secondary = temp;
+// console.log(main, secondary);
+
+// switch with destructuring
+[main, secondary] = [secondary, main];
+console.log(main, secondary);
+
+// Recieve 2 return values from a function
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
+
+// nested array, destructuring inside of an array
+const nested = [2, 4, [5, 6]];
+// const [firstElement, , thirdElement] = nested;
+// console.log(firstElement, thirdElement);
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
+
+// default values
+const [p = 1, q = 1, r = 1] = [8, 9];
+console.log(p, q, r);
